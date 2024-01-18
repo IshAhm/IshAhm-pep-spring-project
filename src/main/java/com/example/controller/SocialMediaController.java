@@ -40,7 +40,7 @@ public class SocialMediaController {
 
 
     @PostMapping("register")
-    public ResponseEntity<Account> registerNewAcc(@RequestBody Account newAcc){
+    public Account registerNewAcc(@RequestBody Account newAcc){
         return accountService.insertAccount(newAcc);
     }
 }
